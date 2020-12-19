@@ -58,13 +58,10 @@ function draw() {
 
 }
 
-function keyPressed() { 
-
-	if (keyCode === up_arrow){
-
-		Matter.Body.applyForce (ball.body,ball.position.{x:85,y:-85})
-
-	}
-
-}
-
+function keyPressed() {
+		if (keyCode === UP_ARROW) {
+  
+		  Matter.Body.applyForce(ball.body,ball.body.position,{x:130,y:-50});
+	  
+		}
+  }
